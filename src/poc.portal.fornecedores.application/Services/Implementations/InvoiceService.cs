@@ -25,7 +25,7 @@ namespace poc.portal.fornecedores.application.Services.Implementations
 
 
 
-            return xmlDoc.ToString();
+            return invoiceXml.Xml;
         }
     }
 }

@@ -19,13 +19,13 @@ namespace poc.portal.fornecedores.api.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> AddInvoiceAsync(
+        public async Task<string> AddInvoiceAsync(
             XmlRequest invoiceXml, 
             CancellationToken cancellationToken)
         {
-            await _invoiceService.AddInvoiceAsync(invoiceXml, cancellationToken);
+            var result = await _invoiceService.AddInvoiceAsync(invoiceXml, cancellationToken);
 
-            return Ok("OK");
+            return result;
         }
 
         //Get All
