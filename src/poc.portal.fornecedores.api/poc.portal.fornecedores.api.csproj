@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <AssemblyName>poc.portal.fornecedores.api</AssemblyName>
+    <RootNamespace>poc.portal.fornecedores.api</RootNamespace>
+    <UserSecretsId>d401b36b-9384-4dcb-a172-2a59c703e83c</UserSecretsId>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+    <DockerfileContext>..\..</DockerfileContext>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.11.1" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\poc.portal.fornecedores.application\poc.portal.fornecedores.application.csproj" />
+  </ItemGroup>
+
+</Project>
